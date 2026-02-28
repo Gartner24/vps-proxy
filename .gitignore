@@ -30,6 +30,7 @@ logs/
 
 # ---- Generated / local-only vhosts ----
 # Keep sanitized examples in repo, keep real prod/dev vhosts local if desired:
+conf.d/active/
 conf.d/local/
 conf.d/dev/local/
 conf.d/*.local.conf
