@@ -1,0 +1,38 @@
+# ---- OS / Editor ----
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+*.iml
+
+# ---- Secrets / env ----
+.env
+.env.*
+!.env.example
+
+# ---- Certificates / ACME runtime ----
+# If you use bind mounts for these, never commit them
+letsencrypt/
+certbot-etc/
+certbot-var/
+acme/
+ssl/
+*.pem
+*.key
+*.pfx
+*.crt
+
+# ---- Nginx runtime/logs ----
+logs/
+*.log
+
+# ---- Generated / local-only vhosts ----
+# Keep sanitized examples in repo, keep real prod/dev vhosts local if desired:
+conf.d/local/
+conf.d/dev/local/
+conf.d/*.local.conf
+
+# ---- Docker ----
+*.pid
